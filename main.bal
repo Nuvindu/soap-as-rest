@@ -2,9 +2,9 @@ import ballerina/data.xmldata;
 import ballerina/http;
 import ballerina/soap.soap12;
 
-configurable string url = ?;
+configurable string url = "http://www.dneonline.com/calculator.asmx";
 
-service / on new http:Listener(8080) {
+service / on new http:Listener(8082) {
     soap12:Client soapEp;
 
     function init() returns error? {
