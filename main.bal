@@ -2,7 +2,7 @@ import ballerina/data.xmldata;
 import ballerina/http;
 import ballerina/soap.soap12;
 
-configurable string url = "http://www.dneonline.com/calculator.asmx";
+configurable string url = ?;
 
 service / on new http:Listener(8082) {
     soap12:Client soapEp;
